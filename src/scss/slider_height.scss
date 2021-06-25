@@ -1,0 +1,112 @@
+
+
+@font-face {
+    font-family: 'TTLakes-Regular';
+    src: url("../fonts/TTLakes-Regular.ttf") format("truetype");
+}
+.swiper-container_height{
+  overflow: hidden;
+}
+.swiper__title_height{
+    margin-top: 0;
+    margin-bottom: 32px;
+    background: linear-gradient( to right,#F8F8F8 ,white);
+}
+.swiper__title_height h1{
+    margin-top: 0;
+    font-size: 16px;
+    color: #7E7E82;
+    padding: 16px;
+}
+.swiper_height{
+    align-items: center;
+    margin-bottom: 38px;
+}
+.swiper_height .slide_height{
+    width: 218px !important;
+    height: 70px;
+    background-color: #ffffff;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+    border: 1px solid #EAEAEA;
+    border-radius: 6px;
+}
+.swiper_height:first-child{
+    margin-left: 10px;
+}
+.slide_height{
+  width: 240px !important;
+  height: 160px !important;
+}
+.swiper__height_p{
+  position: absolute;
+  left: 16px;
+  top:2px;
+}
+.swiper-pagination-bullet{
+    width: 12px !important;
+    height: 12px !important;
+}
+.swiper-pagination-bullet-active{
+    background-color: #7E7E82 !important;
+}
+.button_height{
+    display: none;
+}
+.slide_height__go_height{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+@media screen and (min-width:768px) {
+    .swiper_height{
+        flex-wrap: wrap;
+    }
+    .swiper_height .slide_height{
+        width: 202px !important;
+        height: 70px;
+        margin: 0 12px 16px 12px;
+    }
+  .button_height{
+        display: block;
+        margin-left: 32px;
+        width: 145px;
+        height: 34px;
+    }
+    .button__show_height img{
+
+        position:relative;
+        background-repeat: no-repeat;
+        top:-5px;
+        left: -5px;
+    }
+    .button__show_height {
+        display: flex;
+        border: none;
+        outline: none;
+        background: none;
+    }
+    .button_transform_height{
+        transform: rotate(180deg);
+    }
+    .button__p_height{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+}
+@media screen and (min-width:1120px) {
+    .swiper_height .slide_height {
+        width: 218px !important;
+        height: 70px;
+        margin: 0 16px 16px 16px;
+    }
+}
