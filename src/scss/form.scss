@@ -87,7 +87,35 @@ color:#FF3E79;
   background: none;
 
 }
-@media screen and (min-width:768px) {
+@media screen and (max-width:320px) {
+  .form{
+    box-shadow:none;
+  }
+  .form-page{
+    left: 0;
+    width: 320px;
+    box-shadow:none;
+  }
+  .form-page__form_all input {
+    width: 282px;
+  }
+  .form-page__form_all  {
+    margin-left: 16px;
+  }
+  .form-page__form_all textarea{
+    width: 282px;
+  }
+  .form-page_button-img{
+    position: relative;
+    left:240px;
+    top: 3px;
+  }
+  .form-page__button{
+    position: relative;
+    left:16px;
+    top:24px
+  }
+
 }
 @media screen and (min-width:1120px) {
 
