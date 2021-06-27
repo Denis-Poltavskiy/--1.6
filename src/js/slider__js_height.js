@@ -13,7 +13,7 @@ if (width_height<=767) {
   const swiper_height = new Swiper('.swiper-container_height', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    loop: false,
 
     // If we need pagination
     pagination: {

@@ -4,8 +4,3 @@ import '../scss/style.scss';
 import '../js/slider__js_price.js';
 import '../js/form.js';
 import '../js/mobile_menu.js';
-
-
-
-
-
