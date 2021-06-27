@@ -1,11 +1,10 @@
 .form{
 
-
 }
 
 .form-page{
   display: none;
-  position:absolute;
+  position:fixed;
   right: -26px;
   background-color: white;
   width: 440px;
@@ -42,7 +41,11 @@
   border: 1px solid #EAEAEA;
   border-radius: 8px;
   height: 118px;
-  width: 368px;
+  width: 358px;
+  resize: none;
+  padding-left: 10px;
+  padding-top:10px;
+  overflow: hidden;
 }
 .form-page__form_all{
   margin-left: 32px;
@@ -92,6 +95,7 @@ color:#FF3E79;
     box-shadow:none;
   }
   .form-page{
+
     left: 0;
     width: 320px;
     box-shadow:none;
@@ -104,6 +108,7 @@ color:#FF3E79;
   }
   .form-page__form_all textarea{
     width: 282px;
+    resize: none;
   }
   .form-page_button-img{
     position: relative;
@@ -117,6 +122,6 @@ color:#FF3E79;
   }
 
 }
-@media screen and (min-width:1120px) {
+@media screen and (min-width:1440px) {
 
 }

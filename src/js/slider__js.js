@@ -7,7 +7,7 @@ slide=document.querySelectorAll('.slide_stock');
 var button_transform=document.querySelector('.button__img');
 var button__p=document.querySelector('.button__p');
 button__p.textContent='Показать';
-console.log(slide)
+
 if (width<=767) {
     const swiper = new Swiper('.swiper-container_stock', {
         // Optional parameters

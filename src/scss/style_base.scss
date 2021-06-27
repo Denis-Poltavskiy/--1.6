@@ -1,3 +1,8 @@
+//.spacer{
+//  height: 100%;
+//  width: 1px;
+//}
+
 @media screen and (max-width:767px) {
   .comment_block{
     margin-left: 16px;
@@ -25,7 +30,7 @@ body{
     color: #1B1C21;
     margin: 0;
     display: flex;
-    align-content: center;
+    align-content: flex-end;
     flex-wrap: wrap;
     flex-direction: column;
 }

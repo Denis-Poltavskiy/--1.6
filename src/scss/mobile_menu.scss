@@ -25,6 +25,9 @@
    position: relative;
     right:40px;
   }
+  .mobile-menu__left{
+
+  }
 
 }
 
@@ -53,10 +56,12 @@
     position: absolute;
     z-index: 100;
     box-shadow: 1px 0 50px 0 #454545;
+
   }
 }
   .mobile-menu__left {
     display: none;
+    height: 100%;
     flex-direction: column;
     font-family: TTLakes-Regular, sans-serif;
     font-size: 14px;
@@ -64,6 +69,7 @@
     font-weight: 400;
     letter-spacing: 0.2px;
     width: 320px;
+    height: 820px;
     margin: 0;
     background-color: white;
     //box-shadow: 1px 0 50px 0 #454545;
@@ -264,7 +270,7 @@
 
 @media screen and (min-width:1440px) {
   .mobile-menu__left {
-
+    position: fixed;
     display: flex;
     flex-direction: column;
     font-family: TTLakes-Regular, sans-serif;
@@ -273,7 +279,7 @@
     font-weight: 400;
     letter-spacing: 0.2px;
     width: 320px;
-
+    height: 100%;
     margin: 0;
     background-color: white;
     //box-shadow: 1px 0 50px 0 #454545;

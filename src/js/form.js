@@ -1,5 +1,6 @@
 var height_form=document.documentElement.scrollHeight;
-// var width_form=document.documentElement.scrollWidth;
+var html=document.querySelector('html');
+//var width_form=document.documentElement.scrollWidth;
 // alert(width_form);
 var form=document.querySelector('.form-page');
 var button_chat=document.querySelectorAll('.menu__button_chat');
@@ -34,34 +35,11 @@ button_chat.forEach(function(btn_chat) {
     form_textarea.style.display='block';
     form_title.textContent="Обратная связь";
 
+    html.style.overflow="hidden";
+
   });
 
 });
-
-// button_chat.addEventListener("click", function () {
-//
-//   main.appendChild(vacuum);
-//   vacuum.classList.add("vacuum");
-//
-//   vacuum.style.height=height_form+'px';
-//   // vacuum.style.width=width_form+'px';
-//
-//   vacuum.style.zIndex='100';
-//   form.style.display = 'block';
-//   form_text.style.display='block';
-//   form_email.style.display='block';
-//   form_textarea.style.display='block';
-//   form_title.textContent="Обратная связь";
-//   // if (none_block_form===1){
-//   //     form.style.display = 'block';
-//   //     none_block_form=none_block_form+1;
-//   // }
-//   // else {
-//   //     form.style.display = 'none';
-//   //     none_block_form=none_block_form-1;
-//   //   }
-// });
-
 // Проходим по массиву
 button_call.forEach(function(btn) {
   // Вешаем событие клик
@@ -77,19 +55,20 @@ button_call.forEach(function(btn) {
     form_text.style.display='none';
     form_email.style.display='none';
     form_textarea.style.display='none';
+    html.style.overflow="hidden";
   })
 });
-
-
 
 form_button_close.addEventListener("click", function () {
   form.style.display = 'none';
   vacuum.classList.remove("vacuum");
   main.removeChild(vacuum);
+  html.style.overflow="auto";
 
 });
 vacuum.addEventListener("click", function () {
   form.style.display="none";
   vacuum.classList.remove("vacuum");
   main.removeChild(vacuum);
+  html.style.overflow="auto";
 });
